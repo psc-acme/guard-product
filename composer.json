@@ -1,0 +1,39 @@
+{
+    "name": "psc-acme/guard-product",
+    "description": "Package guard-product for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\GuardProduct\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "doctrine/collections": "^2.0",
+        "symfony/serializer": "^7.0",
+        "symfony/routing": "^7.0",
+        "webmozart/assert": "^1.0",
+        "illuminate/database": "^11.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^7.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
